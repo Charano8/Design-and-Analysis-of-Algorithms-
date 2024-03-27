@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <math.h>
 
-// Function to calculate the number of digits in a number
 int countDigits(int num) {
     int count = 0;
     while (num != 0) {
@@ -11,7 +10,6 @@ int countDigits(int num) {
     return count;
 }
 
-// Function to check if a number is an Armstrong number
 int isArmstrong(int num) {
     int originalNum, remainder, result = 0, n = 0;
 
@@ -27,7 +25,6 @@ int isArmstrong(int num) {
         originalNum /= 10;
     }
 
-    // If num is equal to result, then it is an Armstrong number
     if (result == num)
         return 1; // True
     else
